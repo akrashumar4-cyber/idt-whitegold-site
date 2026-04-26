@@ -301,6 +301,7 @@ footer{background:#0A0A0A;border-top:1px solid rgba(229,228,226,.1);padding:80px
     <li><a href="#hiw">How It Works</a></li>
     <li><a href="#suppliers">For Suppliers</a></li>
     <li><a href="#buyers">For Buyers</a></li>
+    <li><a href="https://whitegold-app.vercel.app/ai-match.html" style="color:var(--gold-l);display:flex;align-items:center;gap:5px">✦ AI Matching</a></li>
   </ul>
   <a href="https://whitegold-app.vercel.app/buyer.html" class="btn-nav">Access Marketplace</a>
 </nav>
@@ -317,6 +318,7 @@ footer{background:#0A0A0A;border-top:1px solid rgba(229,228,226,.1);padding:80px
       <div class="eyebrow-line"></div>
       <span class="eyebrow-text">B2B Diamond Platform · Est. 2024</span>
     </div>
+    <a href="https://whitegold-app.vercel.app/ai-match.html" id="ai-hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:var(--emerald);color:var(--gold-l);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:7px 16px;border-radius:20px;margin-bottom:28px;opacity:0;text-decoration:none;box-shadow:0 0 20px rgba(11,61,46,.4);transition:all .4s cubic-bezier(.25,.46,.45,.94)">✦ Now with AI Diamond Matching</a>
 
     <h1 id="hero-title" aria-label="The World's Diamond Trade, Verified."></h1>
 
@@ -798,6 +800,7 @@ titleEl.innerHTML = words.map((w,wi)=>{
 }).join(' ');
 
 gsap.to('#eyebrow', {opacity:1, y:0, duration:.9, delay:.3, ease:'power3.out'});
+gsap.to('#ai-hero-badge', {opacity:1, y:0, duration:.8, delay:.5, ease:'power3.out'});
 gsap.to(titleEl.querySelectorAll('.letter'), {
   y:0, opacity:1, duration:.65, stagger:.028, delay:.55, ease:'power4.out'
 });
