@@ -373,7 +373,7 @@ const db = createClient(SUPABASE_URL, SUPABASE_ANON);
 
 async function handleLogout() {
   await db.auth.signOut();
-  window.location.replace('https://internationaldiamondtrade.com/login.html');
+  window.location.replace('https://whitegold-site.vercel.app');
 }
 
 document.getElementById('logout-btn').addEventListener('click', handleLogout);
@@ -412,14 +412,14 @@ async function getRoleWithRetry(session) {
   const session = await getSessionWithRetry();
 
   if (!session) {
-    window.location.replace('https://internationaldiamondtrade.com/login.html');
+    window.location.replace('https://whitegold-site.vercel.app');
     return;
   }
 
   const role = await getRoleWithRetry(session);
 
   if (!role) {
-    window.location.replace('https://internationaldiamondtrade.com/login.html');
+    window.location.replace('https://whitegold-site.vercel.app');
     return;
   }
 
